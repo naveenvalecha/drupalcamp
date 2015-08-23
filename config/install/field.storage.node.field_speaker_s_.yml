@@ -1,0 +1,19 @@
+uuid: 2e269e9e-8579-492c-a65f-95f1040f9e4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference
+    - node
+id: node.field_speaker_s_
+field_name: field_speaker_s_
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: entity_reference
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

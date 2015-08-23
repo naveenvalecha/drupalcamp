@@ -1,0 +1,33 @@
+uuid: 467c6193-bbae-44cd-b100-c9fa878f6a09
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9831caf6-aafb-47c9-bb07-7ad5581000e3'
+  module:
+    - block_content
+    - system
+  theme:
+    - d8dcp
+id: d8dcp_facebooklikebox
+theme: d8dcp
+region: sidebar
+weight: -9
+provider: null
+plugin: 'block_content:9831caf6-aafb-47c9-bb07-7ad5581000e3'
+settings:
+  id: 'block_content:9831caf6-aafb-47c9-bb07-7ad5581000e3'
+  label: 'Facebook Like Box'
+  provider: block_content
+  label_display: visible
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "\r\n"
+    negate: true
+    context_mapping: {  }

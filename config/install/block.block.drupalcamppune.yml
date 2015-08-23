@@ -1,0 +1,27 @@
+uuid: 35fc5898-8787-4929-9606-6f0475b95d12
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dae088bb-ef9c-4e24-b40e-148599589801'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: drupalcamppune
+theme: bartik
+region: footer_first
+weight: -8
+provider: null
+plugin: 'block_content:dae088bb-ef9c-4e24-b40e-148599589801'
+settings:
+  id: 'block_content:dae088bb-ef9c-4e24-b40e-148599589801'
+  label: 'DRUPAL CAMP PUNE'
+  provider: block_content
+  label_display: visible
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

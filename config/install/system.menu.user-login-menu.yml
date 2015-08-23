@@ -1,0 +1,8 @@
+uuid: deeaa04a-dd70-4e8c-a209-9caeff2c5ce8
+langcode: en
+status: true
+dependencies: {  }
+id: user-login-menu
+label: 'User Login Menu'
+description: 'Login Menu for anonymous users'
+locked: false

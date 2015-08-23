@@ -1,0 +1,33 @@
+uuid: 71fdf6b7-04cb-4693-a304-4bd32bb50822
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3f3cd56e-7b0e-425e-8300-a4c42c5af1c5'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: announcements
+theme: bartik
+region: featured_top
+weight: -7
+provider: null
+plugin: 'block_content:3f3cd56e-7b0e-425e-8300-a4c42c5af1c5'
+settings:
+  id: 'block_content:3f3cd56e-7b0e-425e-8300-a4c42c5af1c5'
+  label: Announcements
+  provider: block_content
+  label_display: visible
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

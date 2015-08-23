@@ -1,0 +1,33 @@
+uuid: 4d75bdd6-f425-4eb8-9c01-017335653b77
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4d29f387-b55e-4c8c-9841-65c00493d2c7'
+  module:
+    - block_content
+    - system
+  theme:
+    - d8dcp
+id: direction
+theme: d8dcp
+region: content
+weight: -6
+provider: null
+plugin: 'block_content:4d29f387-b55e-4c8c-9841-65c00493d2c7'
+settings:
+  id: 'block_content:4d29f387-b55e-4c8c-9841-65c00493d2c7'
+  label: Direction
+  provider: block_content
+  label_display: '0'
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: venue-details
+    negate: false
+    context_mapping: {  }

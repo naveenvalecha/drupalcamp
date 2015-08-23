@@ -1,0 +1,33 @@
+uuid: bf936521-ee15-4419-892e-46634edccc8e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:aedb9577-192b-4543-9710-1652463176ec'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: keynotespeaker
+theme: bartik
+region: featured_top
+weight: -7
+provider: null
+plugin: 'block_content:aedb9577-192b-4543-9710-1652463176ec'
+settings:
+  id: 'block_content:aedb9577-192b-4543-9710-1652463176ec'
+  label: 'Keynote speaker'
+  provider: block_content
+  label_display: visible
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,41 @@
+uuid: 9e867379-bf91-4bd0-9500-a86696ed9bc8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7478854f-796e-45f3-ba30-481241eace75'
+  module:
+    - block_content
+    - system
+    - user
+  theme:
+    - d8dcp
+id: d8dcp_proposeasessionanonymous
+theme: d8dcp
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:7478854f-796e-45f3-ba30-481241eace75'
+settings:
+  id: 'block_content:7478854f-796e-45f3-ba30-481241eace75'
+  label: 'Propose a session - Anonymous'
+  provider: block_content
+  label_display: '0'
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: user.current_user
+  request_path:
+    id: request_path
+    pages: session/propose
+    negate: false
+    context_mapping: {  }

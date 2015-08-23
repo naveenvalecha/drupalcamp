@@ -1,0 +1,11 @@
+uuid: ea59bbed-d5ad-4e79-9700-d4d873b44510
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node_make_sticky_action
+label: 'Make content sticky'
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

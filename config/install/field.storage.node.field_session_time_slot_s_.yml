@@ -1,0 +1,20 @@
+uuid: 1f1c55f9-cae1-4ccd-8700-a49fa305d7f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_session_time_slot_s_
+field_name: field_session_time_slot_s_
+entity_type: node
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

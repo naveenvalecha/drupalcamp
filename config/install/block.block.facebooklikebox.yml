@@ -1,0 +1,33 @@
+uuid: 82415a22-8cd4-42ce-a209-9c301b252763
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9831caf6-aafb-47c9-bb07-7ad5581000e3'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: facebooklikebox
+theme: bartik
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:9831caf6-aafb-47c9-bb07-7ad5581000e3'
+settings:
+  id: 'block_content:9831caf6-aafb-47c9-bb07-7ad5581000e3'
+  label: 'Facebook Like Box'
+  provider: block_content
+  label_display: visible
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

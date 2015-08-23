@@ -1,0 +1,33 @@
+uuid: b78dc805-3ae9-4bd0-be55-85ec735a0a35
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3f3cd56e-7b0e-425e-8300-a4c42c5af1c5'
+  module:
+    - block_content
+    - system
+  theme:
+    - d8dcp
+id: d8dcp_announcements
+theme: d8dcp
+region: highlighted
+weight: -9
+provider: null
+plugin: 'block_content:3f3cd56e-7b0e-425e-8300-a4c42c5af1c5'
+settings:
+  id: 'block_content:3f3cd56e-7b0e-425e-8300-a4c42c5af1c5'
+  label: Announcements
+  provider: block_content
+  label_display: visible
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

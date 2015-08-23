@@ -1,0 +1,33 @@
+uuid: aa6149bc-81d0-4be4-ae00-001062449420
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7c1024eb-ce7a-4563-9a3c-604eec67e848'
+  module:
+    - block_content
+    - system
+  theme:
+    - d8dcp
+id: d8dcp_becomeasponsor
+theme: d8dcp
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:7c1024eb-ce7a-4563-9a3c-604eec67e848'
+settings:
+  id: 'block_content:7c1024eb-ce7a-4563-9a3c-604eec67e848'
+  label: 'Become a sponsor'
+  provider: block_content
+  label_display: '0'
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

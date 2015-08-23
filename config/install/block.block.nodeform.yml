@@ -1,0 +1,30 @@
+uuid: 9b4eaea0-9ced-4b21-a600-a1bfc790608f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - bartik
+id: nodeform
+theme: bartik
+region: content
+weight: -6
+provider: null
+plugin: formblock_node
+settings:
+  id: formblock_node
+  label: 'Node form'
+  provider: node
+  label_display: '0'
+  cache:
+    max_age: 180
+  type: session
+  show_help: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: session/propose
+    negate: false
+    context_mapping: {  }
