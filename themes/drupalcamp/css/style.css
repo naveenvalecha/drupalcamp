@@ -1,0 +1,552 @@
+/* Makes border-box properties */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+@media only screen{}
+@media only screen and (min-width:768px){}
+@media only screen and (min-width:1025px){}
+@media only screen{}
+@media only screen and (max-width: 568px){}
+@media only screen and (min-width:569px){}
+@media only screen and (min-width:569px) and (max-width:767px){}
+@media only screen and (min-width:768px){}
+@media only screen and (min-width:768px) and (max-width:1024px){}
+@media only screen and (min-width:1025px){}
+@media only screen and (min-width:1025px) and (max-width:1180px){}
+@media only screen and (min-width:1181px){}
+@media only screen and (min-width:1181px) and (max-width:999999999999){}
+*/
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("../fonts/proximanova/proximanova-regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/proximanova/proximanova-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-regular.woff") format("woff"), url("../fonts/proximanova/proximanova-regular.ttf") format("truetype"), url("../fonts/proximanova/proximanova-regular.otf") format("opentype");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proximanova-bold';
+  src: url("../fonts/proximanova/proximanova-bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/proximanova/proximanova-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-bold.woff") format("woff"), url("../fonts/proximanova/proximanova-bold.ttf") format("truetype"), url("../fonts/proximanova/proximanova-bold.otf") format("opentype");
+  /* Legacy iOS */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'proximanova-bolditalic';
+  src: url("../fonts/proximanova/proximanova-boldit.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/proximanova/proximanova-boldit.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-boldit.woff") format("woff"), url("../fonts/proximanova/proximanova-boldit.ttf") format("truetype"), url("../fonts/proximanova/proximanova-boldit.otf") format("opentype");
+  /* Legacy iOS */
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'proximanova-italic';
+  src: url("../fonts/proximanova/proximanova-regitalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/proximanova/proximanova-regitalic.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-regitalic.woff") format("woff"), url("../fonts/proximanova/proximanova-regitalic.ttf") format("truetype"), url("../fonts/proximanova/proximanova-regitalic.otf") format("opentype");
+  /* Legacy iOS */
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'proximanova-light';
+  src: url("../fonts/proximanova/proximanova-light.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/proximanova/proximanova-light.eot?#iefix") format("embedded-opentype"), url("../fonts/proximanova/proximanova-light.woff") format("woff"), url("../fonts/proximanova/proximanova-light.ttf") format("truetype"), url("../fonts/proximanova/proximanova-light.otf") format("opentype");
+  /* Legacy iOS */
+  font-weight: lighter;
+  font-style: normal;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2f2f2f;
+}
+
+a.active,
+a, a:visited {
+  color: #2f2f2f;
+  font-weight: bold;
+}
+
+li a.active {
+  color: #2f2f2f;
+}
+
+::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #aaaaaa;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #aaaaaa;
+}
+
+:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+div.messages.error {
+  color: #996655;
+  background-color: #ffe4e0;
+}
+div.messages.error li {
+  color: #996655;
+}
+div.messages ul {
+  padding: 0;
+}
+div.messages ul li {
+  margin: 0;
+}
+div.messages.warning {
+  color: #aa8844;
+  background-color: #fff4c0;
+}
+div.messages.warning li {
+  color: #aa8844;
+}
+div.messages.status {
+  color: #668877;
+  background-color: #ecf8f4;
+}
+div.messages.status li {
+  color: #668877;
+}
+
+.messages {
+  margin: 0;
+}
+
+body {
+  font-family: 'ProximaNova';
+  line-height: 1.2;
+}
+
+/* --- twitter + fb block --- */
+.not-homepage .region-sidebar {
+  background: url(../images/hornok.png) no-repeat;
+  background-size: 100% 100%;
+  padding: 110px 0;
+}
+.not-homepage .region-sidebar iframe {
+  width: 100% !important;
+  padding: 5px;
+  background: white;
+}
+.not-homepage .region-sidebar h2 {
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* -------------- titles -------------- */
+h2 {
+  margin-top: 25px;
+  font-family: 'proximanova-bold';
+  font-size: 22px;
+}
+
+/* -------------- buttons -------------- */
+.draggable,
+tr.drag-previous {
+  background-color: #ffd;
+}
+
+/* -------------- links -------------- */
+.region-content a.active, .region-content a, .region-content a:visited {
+  color: red;
+  font-family: 'proximanova-bold';
+}
+.region-content strong {
+  font-family: 'proximanova-bold';
+}
+
+.proposed-sessions a.active, .proposed-sessions a, .proposed-sessions a:visited {
+  color: black;
+  font-family: 'proximanova-bold';
+  font-size: 30px;
+}
+.proposed-sessions .speakers a.active, .proposed-sessions .speakers a, .proposed-sessions .speakers a:visited {
+  color: red;
+  font-family: 'proximanova-bold';
+  font-size: 13px;
+}
+
+/* -------------- images -------------- */
+/* -------------- paragraphs -------------- */
+/* -------------- tabs -------------- */
+#page-tabs {
+  margin: 20px 0 0 0;
+}
+#page-tabs ul {
+  padding: 0 0 1em 0;
+  white-space: nowrap;
+  list-style: none;
+  margin: 5px 0;
+  height: auto;
+  line-height: normal;
+  border-bottom: 1px solid transparent;
+}
+#page-tabs ul li {
+  display: inline;
+}
+#page-tabs ul li a {
+  display: inline;
+  background-color: transparent;
+  border-color: #0a3a84;
+  border: none;
+  color: #ffffff;
+  padding: 1em 1em 1em 1em;
+  border-bottom: 5px solid #bbb;
+  text-transform: uppercase;
+}
+#page-tabs ul li a:hover,
+#page-tabs ul li.active a {
+  background-color: #fff;
+  color: #0a3a84;
+  border: none;
+  border-bottom: 5px solid #0a3a84;
+}
+
+ul.primary {
+  padding: 0 0 1em 0;
+  white-space: nowrap;
+  list-style: none;
+  margin: 5px 0;
+  height: auto;
+  line-height: normal;
+  border-bottom: 1px solid transparent;
+}
+ul.primary li a {
+  background-color: transparent;
+  border-color: #0a3a84;
+  border: none;
+  color: #ffffff;
+  padding: 1em 1em 1em 1em;
+  border-bottom: 5px solid #bbb;
+  text-transform: uppercase;
+}
+ul.primary li a:hover,
+ul.primary li.active a {
+  background-color: #fff;
+  color: #0a3a84;
+  border: none;
+  border-bottom: 5px solid #0a3a84;
+}
+
+.tabs ~ .content-area {
+  overflow: hidden;
+  padding: 10px;
+  border: 1px solid #bbb;
+}
+
+div[rel="schema:author"] {
+  font-size: 11px;
+}
+
+.region-content ul {
+  margin-top: 20px;
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.form-radios {
+  padding-left: 20px;
+}
+
+.field-block-content--body a[href="/user/login"] {
+  background-color: #90bf34;
+  display: block;
+  width: 300px;
+  padding: 10px 5px;
+  margin: 20px auto;
+  font-family: 'proximanova-bold';
+  font-size: 18px;
+  color: #eaeced;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/* -------------- pager -------------- */
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border: 1px solid #eaeced;
+  -moz-border: 1px solid #eaeced;
+  border: 1px solid #eaeced;
+}
+
+.form-textarea {
+  width: 100%;
+}
+
+.form-textarea,
+.form-item,
+.form-type-textfield,
+.form-type-email {
+  font-family: 'proximanova';
+}
+.form-textarea label,
+.form-item label,
+.form-type-textfield label,
+.form-type-email label {
+  color: #2f2f2f;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.form-textarea input,
+.form-item input,
+.form-type-textfield input,
+.form-type-email input {
+  width: 100%;
+  padding: 8px 10px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.form-textarea .description,
+.form-item .description,
+.form-type-textfield .description,
+.form-type-email .description {
+  display: none;
+}
+
+input[type="submit"],
+.button {
+  background-color: #90bf34;
+  display: block;
+  width: 300px;
+  padding: 10px 5px;
+  margin: 20px auto;
+  font-family: 'proximanova-bold';
+  font-size: 18px;
+  color: #eaeced;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+
+#edit-actions input[type="submit"] {
+  display: inline;
+}
+
+.form-item input.form-checkbox,
+.form-item input.form-radio {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+  appearance: radio;
+  -webkit-border: none;
+  -moz-border: none;
+  border: none;
+  width: auto;
+}
+
+.front h1#page-title {
+  display: none;
+}
+
+.front .tabs {
+  display: none;
+}
+
+h1#page-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'proximanova-bold';
+  color: #ffffff;
+  margin: 20px auto 10px;
+  width: 80%;
+}
+
+.field-node--field-status,
+.field-node--field-experience-level,
+.field-node--field-speaker-s- {
+  *zoom: 1;
+}
+.field-node--field-status:after,
+.field-node--field-experience-level:after,
+.field-node--field-speaker-s-:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+.field-node--field-status .field-label,
+.field-node--field-experience-level .field-label,
+.field-node--field-speaker-s- .field-label {
+  float: left;
+  margin-right: 20px;
+  font-family: 'proximanova-bold';
+  border: 1px solid;
+  padding: 2px;
+  width: 30%;
+  margin: 2px 4px;
+}
+.field-node--field-status .field-items,
+.field-node--field-experience-level .field-items,
+.field-node--field-speaker-s- .field-items {
+  width: 67%;
+  float: right;
+  border: 1px solid;
+  padding: 2px;
+  margin: 2px 4px;
+}
+
+a.tabledrag-handle .handle {
+  background: url(../../../misc/icons/787878/move.svg) no-repeat 6px 7px;
+  height: 25px;
+  margin: 0 3em 0 1em;
+  padding: 0.42em 0.5em;
+  width: 25px;
+}
+
+.filter-guidelines {
+  display: none;
+}
+
+.fieldset-legend {
+  font-size: 22px;
+  font-family: 'proximanova-bold';
+}
+
+.dropbutton {
+  list-style: none !important;
+  display: inline-block;
+}
+.dropbutton .dropbutton-action {
+  display: inline-block;
+}
+.dropbutton .dropbutton-action input[type="submit"] {
+  background-color: #90bf34;
+  display: block;
+  width: 175px;
+  padding: 10px 5px;
+  margin: 10px auto;
+  font-family: 'proximanova-bold';
+  font-size: 14px;
+  color: #eaeced;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+.dropbutton .dropbutton-toggle {
+  display: none;
+}
+
+.pager .pager__item {
+  display: inline;
+  padding: 0.5em;
+  border: 1px solid;
+  margin: 2px;
+}
+.pager .pager__item a {
+  font-family: 'proximanova-bold';
+  font-size: 16px;
+}
+
+.form-radios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.form-radios .form-item {
+  display: inline-block;
+  flex-grow: 0;
+  padding-right: 20px;
+}
