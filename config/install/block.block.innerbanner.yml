@@ -1,0 +1,33 @@
+uuid: 49dd91b3-a5db-40c1-b80e-1471377df12d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:820ff33f-fd74-4210-8a00-cca1e254fe5d'
+  module:
+    - block_content
+    - system
+  theme:
+    - d8dcp
+id: innerbanner
+theme: d8dcp
+region: featured
+weight: -10
+provider: null
+plugin: 'block_content:820ff33f-fd74-4210-8a00-cca1e254fe5d'
+settings:
+  id: 'block_content:820ff33f-fd74-4210-8a00-cca1e254fe5d'
+  label: 'Inner Banner'
+  provider: block_content
+  label_display: '0'
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

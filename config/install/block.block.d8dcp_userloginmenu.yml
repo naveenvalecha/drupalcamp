@@ -1,0 +1,34 @@
+uuid: 1a67abbd-3fb0-4f16-ba5f-956ece1a7358
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.user-login-menu
+  module:
+    - system
+    - user
+  theme:
+    - d8dcp
+id: d8dcp_userloginmenu
+theme: d8dcp
+region: header
+weight: -7
+provider: null
+plugin: 'system_menu_block:user-login-menu'
+settings:
+  id: 'system_menu_block:user-login-menu'
+  label: 'User Login Menu'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: -1
+  level: 1
+  depth: 0
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: user.current_user

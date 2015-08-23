@@ -1,0 +1,30 @@
+uuid: eacc6098-730e-4ca0-a600-a487e113c384
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - system
+  theme:
+    - d8dcp
+id: d8dcp_nodeform
+theme: d8dcp
+region: content
+weight: -7
+provider: null
+plugin: formblock_node
+settings:
+  id: formblock_node
+  label: 'Propose your Session'
+  provider: node
+  label_display: visible
+  cache:
+    max_age: 180
+  type: session
+  show_help: 0
+visibility:
+  request_path:
+    id: request_path
+    pages: session/propose
+    negate: false
+    context_mapping: {  }

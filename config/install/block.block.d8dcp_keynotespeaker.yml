@@ -1,0 +1,33 @@
+uuid: 5dd05c3a-714d-4eec-9915-2109f21c9af6
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:aedb9577-192b-4543-9710-1652463176ec'
+  module:
+    - block_content
+    - system
+  theme:
+    - d8dcp
+id: d8dcp_keynotespeaker
+theme: d8dcp
+region: '-1'
+weight: -8
+provider: null
+plugin: 'block_content:aedb9577-192b-4543-9710-1652463176ec'
+settings:
+  id: 'block_content:aedb9577-192b-4543-9710-1652463176ec'
+  label: 'Keynote speaker'
+  provider: block_content
+  label_display: visible
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

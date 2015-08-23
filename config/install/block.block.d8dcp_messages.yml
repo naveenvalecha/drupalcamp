@@ -1,0 +1,22 @@
+uuid: d366355d-3ed0-41fa-8f4f-79822e4d67a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - d8dcp
+id: d8dcp_messages
+theme: d8dcp
+region: help
+weight: -8
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: -1
+visibility: {  }

@@ -1,0 +1,11 @@
+uuid: c9f711b9-ead0-46f5-bc00-fb023f005116
+langcode: en
+status: true
+dependencies:
+  module:
+    - comment
+id: comment_unpublish_action
+label: 'Unpublish comment'
+type: comment
+plugin: comment_unpublish_action
+configuration: {  }

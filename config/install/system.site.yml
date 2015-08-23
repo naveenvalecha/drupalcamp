@@ -1,0 +1,13 @@
+uuid: b8e64d30-4aa5-4606-b73d-619827ede694
+name: 'Drupal Camp Pune''15'
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+mail_notification: ''

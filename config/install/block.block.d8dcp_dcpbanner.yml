@@ -1,0 +1,33 @@
+uuid: 27c3a9aa-9479-461b-b729-41d1324cef83
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:05b15951-dab2-4200-a506-6c4fd9dcf62c'
+  module:
+    - block_content
+    - system
+  theme:
+    - d8dcp
+id: d8dcp_dcpbanner
+theme: d8dcp
+region: featured
+weight: -9
+provider: null
+plugin: 'block_content:05b15951-dab2-4200-a506-6c4fd9dcf62c'
+settings:
+  id: 'block_content:05b15951-dab2-4200-a506-6c4fd9dcf62c'
+  label: 'DCP Banner'
+  provider: block_content
+  label_display: '0'
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

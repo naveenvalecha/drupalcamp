@@ -1,0 +1,27 @@
+uuid: 87c0d48c-7e26-49a1-b030-483da4669cd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slides
+    - node.type.session
+  module:
+    - file
+id: node.session.field_slides
+field_name: field_slides
+entity_type: node
+bundle: session
+label: Slides
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: slides
+  file_extensions: 'ppt pdf odt odp'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: file

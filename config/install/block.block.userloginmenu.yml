@@ -1,0 +1,34 @@
+uuid: a6aa6475-1dba-4b4a-ba00-e101eee8044f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.user-login-menu
+  module:
+    - system
+    - user
+  theme:
+    - bartik
+id: userloginmenu
+theme: bartik
+region: secondary_menu
+weight: -8
+provider: null
+plugin: 'system_menu_block:user-login-menu'
+settings:
+  id: 'system_menu_block:user-login-menu'
+  label: 'User Login Menu'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: -1
+  level: 1
+  depth: 0
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: user.current_user

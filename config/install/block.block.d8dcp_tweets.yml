@@ -1,0 +1,33 @@
+uuid: 74cb2150-dabf-40b3-a649-73aa47fa8091
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c2148eea-4700-45d5-ba00-f2c493e96fd3'
+  module:
+    - block_content
+    - system
+  theme:
+    - d8dcp
+id: d8dcp_tweets
+theme: d8dcp
+region: sidebar
+weight: -8
+provider: null
+plugin: 'block_content:c2148eea-4700-45d5-ba00-f2c493e96fd3'
+settings:
+  id: 'block_content:c2148eea-4700-45d5-ba00-f2c493e96fd3'
+  label: Tweets
+  provider: block_content
+  label_display: visible
+  cache:
+    max_age: -1
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: ''
+    negate: true
+    context_mapping: {  }

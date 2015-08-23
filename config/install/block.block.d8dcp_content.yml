@@ -1,0 +1,22 @@
+uuid: 82e925b7-b848-4d4a-9500-b14fe28830f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - d8dcp
+id: d8dcp_content
+theme: d8dcp
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+  cache:
+    max_age: -1
+visibility: {  }
