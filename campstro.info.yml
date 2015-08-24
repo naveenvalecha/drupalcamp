@@ -1,8 +1,7 @@
-name: Camp Distro
+name: Camp Distribution
 type: profile
-description: ''
-# version: VERSION
-#core: 8.x
+description: 'Camp Distribution'
+core: 8.x
 dependencies:
   - node
   - history
