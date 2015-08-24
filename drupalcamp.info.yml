@@ -1,8 +1,7 @@
 name: Drupal Camp Profile
 type: profile
-description: 'Install with drupcal camp features pre-configured.'
-# version: VERSION
-#core: 8.x
+description: 'Install with drupal camp features pre-configured.'
+core: 8.x
 dependencies:
   - node
   - history
