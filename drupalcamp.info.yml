@@ -1,6 +1,6 @@
-name: Drupal Camp Profile
+name: Drupal Camp
 type: profile
-description: 'Install with drupal camp features pre-configured.'
+description: 'Install with Drupal Camp features pre-configured.'
 core: 8.x
 dependencies:
   - node
