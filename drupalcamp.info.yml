@@ -41,9 +41,12 @@ dependencies:
   - system
   - user
   - text
-  - captcha
+  - page_cache
+  - update
   - formblock
+  - captcha
+  - recaptcha
 themes:
   - bartik
   - seven
-  - drupalcamp
+  - d8dcp

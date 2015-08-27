@@ -5,3 +5,5 @@ core = 8.x
 projects[captcha][subdir] = "contrib"
 
 projects[formblock][subdir] = "contrib"
+
+projects[recaptcha][subdir] = "contrib"
