@@ -1,5 +1,5 @@
 {
-  "name": "d8dcp",
+  "name": "drupalcamp",
   "version": "1.0.0",
   "description": "grunt setup for sass and live reload",
   "main": "index.js",

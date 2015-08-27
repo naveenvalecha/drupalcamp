@@ -1,0 +1,9 @@
+# Schema for the configuration files of the drupalcamp theme.
+
+drupalcamp.settings:
+  type: theme_settings
+  label: 'drupalcamp settings'
+
+drupalcamp.breakpoints:
+  type: theme_breakpoints_default
+  label: 'drupalcamp breakpoints'

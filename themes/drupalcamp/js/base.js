@@ -1,6 +1,6 @@
 (function ($, Drupal) {
 
-  Drupal.behaviors.d8dcp = {
+  Drupal.behaviors.drupalcamp = {
     attach: function (context, settings) {
 
     }
