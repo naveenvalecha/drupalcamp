@@ -41,6 +41,8 @@ dependencies:
   - system
   - user
   - text
+  - captcha
+  - formblock
 themes:
   - bartik
   - seven
