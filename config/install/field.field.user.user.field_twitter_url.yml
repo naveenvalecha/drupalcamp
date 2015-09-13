@@ -1,0 +1,20 @@
+uuid: 742b5dcb-f8d4-4c59-9807-7b39e930ff67
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_twitter_url
+id: user.user.field_twitter_url
+field_name: field_twitter_url
+entity_type: user
+bundle: user
+label: 'Twitter URL'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

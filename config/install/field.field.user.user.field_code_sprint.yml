@@ -1,0 +1,20 @@
+uuid: b8fd6431-e387-427d-9a07-7a00f87eb7ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_code_sprint
+  module:
+    - options
+id: user.user.field_code_sprint
+field_name: field_code_sprint
+entity_type: user
+bundle: user
+label: 'Coming for code Sprint'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

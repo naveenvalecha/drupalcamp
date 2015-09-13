@@ -1,0 +1,9 @@
+uuid: ca081d4f-2a0a-4be8-8600-ed8bee954093
+langcode: en
+status: true
+dependencies: {  }
+name: Organization
+vid: organization
+description: 'Organization/College Name'
+hierarchy: 0
+weight: 0

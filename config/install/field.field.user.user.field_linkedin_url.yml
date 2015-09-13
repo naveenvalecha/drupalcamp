@@ -1,0 +1,20 @@
+uuid: f4b85e5e-a710-4902-aa62-9883ff98a441
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_linkedin_url
+id: user.user.field_linkedin_url
+field_name: field_linkedin_url
+entity_type: user
+bundle: user
+label: 'LinkedIn URL'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string
