@@ -1,0 +1,26 @@
+uuid: 6ffd6351-fc96-45f8-9703-3cda50a63c07
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_code_sprint
+field_name: field_code_sprint
+entity_type: user
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 0
+      label: 'NO'
+    -
+      value: 1
+      label: 'YES'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false

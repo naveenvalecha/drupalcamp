@@ -1,0 +1,20 @@
+uuid: 59029500-ad90-4a33-aa00-edf2ceeb5bbc
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_current_location
+field_name: field_current_location
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
